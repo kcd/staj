@@ -1,1 +1,1 @@
-nty
+Staj Yönetim Sistemi.
