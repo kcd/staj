@@ -7,6 +7,7 @@ gem 'rails', '3.2.8'
 
 #gem 'sqlite3'
 #gem 'mysql2'
+gem 'heroku'
 gem 'execjs'
 gem 'therubyracer', :platforms => :ruby
 gem 'slim'
