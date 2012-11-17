@@ -1,1 +1,1 @@
-Staj Yönetim Sistemi.
+-Staj Yönetim Sistemi.-
