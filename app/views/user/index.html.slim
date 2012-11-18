@@ -1,2 +1,5 @@
-h1 User#index
-p Find me in app/views/user/index.html.slim
+h1 Staj hoşgeldin. Biz de uzun zamandır seni bekliyorduk :)
+- if current_user
+  = current_user.email
+  '
+  = link_to "Çıkış yap", destroy_user_session_path, :method => :delete
