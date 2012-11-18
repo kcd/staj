@@ -1,4 +1,6 @@
 Staj::Application.routes.draw do
+  get "user/index"
+
   get "home/index"
 
   #get "home/index"
