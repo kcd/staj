@@ -1,4 +1,6 @@
 Staj::Application.routes.draw do
+  devise_for :users
+
   get "user/index"
 
   get "home/index"
