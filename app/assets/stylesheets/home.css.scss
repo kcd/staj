@@ -1,3 +1,52 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+  margin-left:50px;
+  margin-right:50px;
+  background-color: #e8d069; 
+}
+img{
+margin-top:40px;
+}
+.navbar-inner {
+  min-height: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #b94a48;
+  background-image: -moz-linear-gradient(top, #b94a48, #b94a48);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b94a48), to(#b94a48));
+  background-image: -webkit-linear-gradient(top, #b94a48, #b94a48);
+  background-image: -o-linear-gradient(top, #00CCFF, #0066FF);
+  background-image: linear-gradient(to bottom, #b94a48, #b94a48);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b94a48'endColorstr='#b94a48', GradientType=0);
+  border: 0px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.hero-unit{
+min-height: 250px;
+border: 7px solid gray ;
+padding-left: 150px;
+padding-top: 30px;
+margin-left:250px;
+margin-right:400px;
+
+}
+
+.arkaplan{
+  padding-top:90px;
+  padding-left:90px;
+  min-height:300px;
+  border:0px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  font-family: Menlo, Monaco, Consolas, "arial", monospace;
+  color: #2d2b2b;
+}
+
+

@@ -1,8 +1,9 @@
-h1 Staj Yönetim Sistemi
-h3 Merhaba Staj :) :) 
-- if current_user
-  = current_user.email
-  '
-  = link_to "Çıkış Yap", destroy_user_session_path, :method => :delete
-- else
-  = link_to "Giriş Yap", index_path
+.arkaplan
+        h1 Staj Yönetim Sistemi
+        h3 Merhaba Staj :) :) 
+        - if current_user
+          = current_user.email
+          '
+          = link_to "Çıkış Yap", destroy_user_session_path, :method => :delete
+        - else
+          = link_to "Giriş Yap", index_path
