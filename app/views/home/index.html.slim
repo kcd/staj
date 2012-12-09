@@ -1,9 +1,103 @@
-.arkaplan
-        h1 Staj Yönetim Sistemi
-        h3 Merhaba Staj :) :) 
-        - if current_user
-          = current_user.email
-          '
-          = link_to "Çıkış Yap", destroy_user_session_path, :method => :delete
-        - else
-          = link_to "Giriş Yap", index_path
+html[lang="en"]
+  head
+    meta[charset="utf-8"]
+    title
+      | Staj Yönetim Sistemi
+    meta[name="viewport" content="width=device-width, initial-scale=1.0"]
+    meta[name="description" content=""]
+    meta[name="author" content="staj"]
+    link[href="../assets/css/bootstrap.css" rel="stylesheet"]
+    link[href="../assets/css/bootstrap-responsive.css" rel="stylesheet"]
+    link[rel="shortcut icon" href="../assets/ico/favicon.ico"]
+    link[rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png"]
+    link[rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png"]
+    link[rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png"]
+    link[rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png"]
+  body
+    .container.navbar-wrapper
+      .navbar.navbar-inverse
+        .navbar-inner
+          a.btn.btn-navbar[data-toggle="collapse" data-target=".nav-collapse"]
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand[href="#"]
+            | 19 Mayis Universitesi
+          .nav-collapse.collapse
+            ul.nav
+              li.active
+                a[href="#"]
+                  | Anasayfa
+              li
+                a[href="/hakkimda.html"]
+                  | Hakkımızda
+              li
+                a[href="/img/iletisim.jpg"]
+                  | İletişim
+              li.dropdown
+                a.dropdown-toggle[href="#" data-toggle="dropdown"]
+                  | Giriş
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a[href="#"]
+                      | Kurum
+                  li
+                    a[href="#"]
+                      | Komisyon
+                  li
+                    a[href="#"]
+                      | Ogrenci
+                 
+    #myCarousel.carousel.slide
+      .carousel-inner
+        .item.active
+          img[src="http://twitter.github.com/bootstrap/assets/img/examples/slide-01.jpg" alt=""]
+          .container
+            .carousel-caption
+              h1
+                | Bilgisayar Mühendisliği Bölümü
+              p.lead
+                | Samsun Ondokuz Mayıs Üniversitesi
+              a.btn.btn-large.btn-primary[href="http://bil.omu.edu.tr/a/" target="_blank"]
+                | Bil.Mühendisliği
+        .item
+          img[src="http://twitter.github.com/bootstrap/assets/img/examples/slide-02.jpg" alt=""]
+          .container
+            .carousel-caption
+              h1
+                | Kaynak Kodlarımız
+              p.lead
+                | Çok Çalıştık Başardık :)
+              a.btn.btn-large.btn-danger[href="https://github.com/kcd/staj" target="_blank"]
+                | Github deposu
+        .item
+          img[src="http://twitter.github.com/bootstrap/assets/img/examples/slide-03.jpg" alt=""]
+          .container
+            .carousel-caption
+              h1
+                | İş Planımız
+              p.lead
+                | İşlerimizi burada düzenledik.
+              a.btn.btn-large.btn-warning[href="https://trello.com/board/project-staj" target="_blank"]
+                | Trello
+      a.left.carousel-control[href="#myCarousel" data-slide="prev"]
+        | ‹
+      a.right.carousel-control[href="#myCarousel" data-slide="next"]
+        | ›
+     
+    script[src="../assets/js/jquery.js"]
+    script[src="../assets/js/bootstrap-transition.js"]
+    script[src="../assets/js/bootstrap-alert.js"]
+    script[src="../assets/js/bootstrap-modal.js"]
+    script[src="../assets/js/bootstrap-dropdown.js"]
+    script[src="../assets/js/bootstrap-scrollspy.js"]
+    script[src="../assets/js/bootstrap-tab.js"]
+    script[src="../assets/js/bootstrap-tooltip.js"]
+    script[src="../assets/js/bootstrap-popover.js"]
+    script[src="../assets/js/bootstrap-button.js"]
+    script[src="../assets/js/bootstrap-collapse.js"]
+    script[src="../assets/js/bootstrap-carousel.js"]
+    script[src="../assets/js/bootstrap-typeahead.js"]
+    script
+      |  !function ($) { $(function(){ // carousel demo $('#myCarousel').carousel() }) }(window.jQuery) 
