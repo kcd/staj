@@ -1,7 +1,65 @@
+html[lang="en"]
+  head
+    meta[charset="utf-8"]
+    title
+      | Staj Yönetim Sistemi
+    meta[name="viewport" content="width=device-width, initial-scale=1.0"]
+    meta[name="description" content=""]
+    meta[name="author" content="staj"]
+    link[href="../assets/css/bootstrap.css" rel="stylesheet"]
+    link[href="../assets/css/bootstrap-responsive.css" rel="stylesheet"]
+  body
+    .container.navbar-wrapper
+      .navbar.navbar-inverse
+        .navbar-inner
+          a.btn.btn-navbar[data-toggle="collapse" data-target=".nav-collapse"]
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand[href="#"]
+            | 19 Mayis Universitesi
+          .nav-collapse.collapse
+            ul.nav
+              li
+                a[href="home"]
+                  | Anasayfa
+              li
+                a[href="/hakkimda.html"]
+                  | Hakkımızda
+              li
+                a[href="/img/iletisim.jpg"]
+                  | İletişim
+              li.dropdown
+                a.dropdown-toggle[href="#" data-toggle="dropdown"]
+                  | Giriş
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a[href="kurum"]
+                      | Kurum
+                  li
+                    a[href="komisyon"]
+                      | Komisyon
+                  li.active
+                    a[href="user"]
+                      | Öğrenci
+                 
 .arkaplan
-        h1 Staj hoşgeldin. Biz de uzun zamandır seni bekliyorduk :)
-        - if current_user
-          = current_user.email
-          '
-          = link_to "Çıkış yap", destroy_user_session_path, :method => :delete
-
+  h2
+    center Öğrenci Giriş Sayfası
+  form.form-horizontal
+    .control-group
+      label.control-label for="inputEmail"
+      .controls
+        input#inputEmail placeholder="Email" type="text"
+    .control-group
+      label.control-label for="inputPassword"
+      .controls
+        input#inputPassword placeholder="******" type="password"
+    .control-group
+      .controls
+        label.checkbox
+          input type="checkbox"
+            | Beni Hatırla
+        button.btn-large.btn-primary
+            | Giris

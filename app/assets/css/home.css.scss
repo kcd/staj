@@ -4,6 +4,7 @@
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
+  background-color: #e5e5e5;
 }
 
 /* Remove border and change up box shadow for more contrast */
@@ -205,4 +206,10 @@ body {
    }
  
 }
-    
+.arkaplan{
+padding:30px;
+background-color:#eeeeee;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}

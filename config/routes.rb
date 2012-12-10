@@ -1,15 +1,20 @@
 Staj::Application.routes.draw do
-  resources :posts
+  get "contact/index"
 
-  devise_for :users
+  get "about/index"
 
-  #get "user/index"
+  # resources :posts
+
+  # devise_for :users
+
+  get "user/index"
+
+  get "home/index"
 
   #get "home/index"
-
-  #get "home/index"
-  match "/index" => "user#index"
-  root to: "home#index"
+  match "user" => "user#index"
+  match "home" => "home#index"
+  root :to => "home#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
