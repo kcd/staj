@@ -45,21 +45,8 @@ html[lang="en"]
                       | Öğrenci
                  
 .arkaplan
-  h2
-    center Öğrenci Giriş Sayfası
-  form.form-horizontal
-    .control-group
-      label.control-label for="inputEmail"
-      .controls
-        input#inputEmail placeholder="Email" type="text"
-    .control-group
-      label.control-label for="inputPassword"
-      .controls
-        input#inputPassword placeholder="******" type="password"
-    .control-group
-      .controls
-        label.checkbox
-          input type="checkbox"
-            | Beni Hatırla
-        button.btn-large.btn-primary
-            | Giris
+  h1 deniyoruz
+  - if current_user
+    = current_user.email
+    '
+    = link_to "Çıkış yap", destroy_user_session_path, :method => :delete

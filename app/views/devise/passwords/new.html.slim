@@ -1,9 +1,9 @@
-h2 Forgot your password?
+h2 Parolanızı mı unuttunuz?
 = form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f|
   = devise_error_messages!
   div
     = f.label :email
     br/
-    = f.email_field :email
-  div= f.submit "Send me reset password instructions"
+    = f.email_field :email, :placeholder => 'user@bil.omu.edu.tr'
+  div= f.submit "Sıfırlamak için mail adresinizi gönderin"
 = render "devise/shared/links"
