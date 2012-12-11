@@ -1,5 +1,51 @@
-p
-  | Hello #{@resource.email}!
-p Your account has been locked due to an excessive amount of unsuccessful sign in attempts.
-p Click the link below to unlock your account:
-p= link_to 'Unlock my account', unlock_url(@resource, :unlock_token => @resource.unlock_token)
+html[lang="en"]
+  head
+    meta[charset="utf-8"]
+    title
+      | Staj Yönetim Sistemi
+    meta[name="viewport" content="width=device-width, initial-scale=1.0"]
+    meta[name="description" content=""]
+    meta[name="author" content="staj"]
+    link[href="../assets/css/bootstrap.css" rel="stylesheet"]
+    link[href="../assets/css/bootstrap-responsive.css" rel="stylesheet"]
+  body
+    .container.navbar-wrapper
+      .navbar.navbar-inverse
+        .navbar-inner
+          a.btn.btn-navbar[data-toggle="collapse" data-target=".nav-collapse"]
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand[href="#"]
+            | 19 Mayis Universitesi
+          .nav-collapse.collapse
+            ul.nav
+              li
+                a[href="home"]
+                  | Anasayfa
+              li
+                a[href="/hakkimda.html"]
+                  | Hakkımızda
+              li
+                a[href="/img/iletisim.jpg"]
+                  | İletişim
+              li.dropdown
+                a.dropdown-toggle[href="#" data-toggle="dropdown"]
+                  | Giriş
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a[href="kurum"]
+                      | Kurum
+                  li
+                    a[href="komisyon"]
+                      | Komisyon
+                  li.active
+                    a[href="user"]
+                      | Öğrenci
+.arkaplan
+  p
+    | Hello #{@resource.email}!
+  p Your account has been locked due to an excessive amount of unsuccessful sign in attempts.
+  p Click the link below to unlock your account:
+  p= link_to 'Unlock my account', unlock_url(@resource, :unlock_token => @resource.unlock_token)

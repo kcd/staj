@@ -16,6 +16,8 @@ Staj::Application.routes.draw do
   match "/index" => "user#index"
   match "/:email/index" => "user#content"
   match "/user/:email/index" => "user#index"
+  match "/users/home" => "home#index"
+  match "/users/about" => "about#index"
   # match "home" => "home#index"
   root :to => "home#index"
   #authenticated :user do
