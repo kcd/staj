@@ -22,5 +22,11 @@
 
 [![içerik] (http://i.imgur.com/gPjUD.png)](http://i.imgur.com/gPjUD.png)
 
+ **Hakkımızda**
 
+[![hakkımızda] (http://i.imgur.com/0SdXF.png)](http://i.imgur.com/0SdXF.png)
+
+**İletişim**
+
+[![iletişim] (http://i.imgur.com/EW3gJ.png)](http://i.imgur.com/EW3gJ.png)
 
