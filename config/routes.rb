@@ -1,8 +1,4 @@
 Staj::Application.routes.draw do
-  get "contact/index"
-
-  #get "about/index"
-
   resources :user
 
   devise_for :users
