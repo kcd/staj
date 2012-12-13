@@ -1,7 +1,7 @@
 Staj::Application.routes.draw do
   get "contact/index"
 
-  get "about/index"
+  #get "about/index"
 
   resources :user
 
@@ -17,7 +17,8 @@ Staj::Application.routes.draw do
   match "/:email/index" => "user#content"
   match "/user/:email/index" => "user#index"
   match "/users/home" => "home#index"
-  match "/users/about" => "about#index"
+  match "about" => "home#about"
+  match "contact" => "home#contact"
   # match "home" => "home#index"
   root :to => "home#index"
   #authenticated :user do

@@ -24,10 +24,10 @@ html[lang="en"]
                 a[href="home"]
                   | Anasayfa
               li
-                a[href="/hakkimda.html"]
+                a[href="/about.html"]
                   | Hakkımızda
               li
-                a[href="/img/iletisim.jpg"]
+                a[href="/contact.html"]
                   | İletişim
               li.dropdown
                 a.dropdown-toggle[href="#" data-toggle="dropdown"]
@@ -48,15 +48,12 @@ html[lang="en"]
   = form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
     = devise_error_messages!
     div
-      = f.label :email
       br/
       = f.email_field :email, :placeholder => 'user@bil.omu.edu.tr' 
     div
-      = f.label :password
       br/
       = f.password_field :password, :placeholder => 'Parola'
     div
-      = f.label :password_confirmation
       br/
       = f.password_field :password_confirmation, :placeholder => 'Parola Tekrarla'
     div= f.submit "Kaydol"
