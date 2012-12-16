@@ -2,21 +2,23 @@ Staj::Application.routes.draw do
   resources :user
 
   devise_for :users
-  #devise_for :users, :controllers => { :sessions => "users/sessions" }
+
 
   get "user/index"
-
   get "home/index"
 
-  #get "home/index"
-  match "/index" => "user#index"
-  match "/:email/index" => "user#content"
-  match "/user/:email/index" => "user#index"
-  match "/users/home" => "home#index"
+  match "home" => "home#index"
   match "about" => "home#about"
   match "contact" => "home#contact"
-  # match "home" => "home#index"
+  
   root :to => "home#index"
+
+  #match "/index" => "user#index" gereksiz
+  #match "/:email/index" => "user#content" gereksiz
+  #match "/user/:email/index" => "user#index" gereksiz
+  #get "users/home" => "home#index"
+
+
   #authenticated :user do
      #root :to => 'home#index'
   #end
