@@ -16,7 +16,7 @@ Staj::Application.routes.draw do
   #match "/index" => "user#index" gereksiz
   #match "/:email/index" => "user#content" gereksiz
   #match "/user/:email/index" => "user#index" gereksiz
-  #get "users/home" => "home#index"
+  #get "users/home" => "home#index" gereksiz
 
 
   #authenticated :user do
