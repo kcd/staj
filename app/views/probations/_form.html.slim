@@ -1,0 +1,21 @@
+= form_for @probation, :html => { :class => "form-horizontal" } do |f|
+  .control-group
+    = f.label :staj_yeri, :class => 'control-label'
+    .controls
+      = f.text_field :staj_yeri, :class => 'text_field'
+  .control-group
+    = f.label :tur, :class => 'control-label'
+    .controls
+      = f.text_area :tur, :class => 'text_area'
+  .control-group
+    = f.label :tarih, :class => 'control-label'
+    .controls
+      = f.text_area :tarih, :class => 'text_area'
+
+  .form-actions
+    = f.submit nil, :class => 'btn btn-primary'
+    '
+    = link_to t('.cancel', :default => t("helpers.links.cancel")),
+      institution_proselects_path, :class => 'btn'
+
+

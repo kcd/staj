@@ -1,0 +1,21 @@
+.arkaplan
+  ul.nav.nav-tabs.nav-stacked
+  ul.nav.nav-list
+    li
+      p align="center"
+        = current_user.email
+    li.divider
+    li
+      a href="/institution/index"
+        | AnaSayfa
+    li
+      a href="/institution/proselects"
+        | Staj Yeri Seçimi
+    li
+      a href="/institution/reports"
+        | Rapor
+    li
+      a href="/institution/settings"
+        | Kullanıcı Ayarları
+    li
+      = link_to "Çıkış Yap", destroy_user_session_path, :method => :delete

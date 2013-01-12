@@ -1,22 +1,38 @@
 Staj::Application.routes.draw do
-  resources :user
+  root to: "home#index"
+
+  resources :probations
 
   devise_for :users
 
+  get "commission/index"
+  get "institution/index"
+  get "student/index"
 
-  get "user/index"
-  get "home/index"
+  match "/about" => "home#about"
+  match "/contact" => "home#contact"
 
-  match "home" => "home#index"
-  match "about" => "home#about"
-  match "contact" => "home#contact"
-  
-  root :to => "home#index"
 
-  #match "/index" => "user#index" gereksiz
-  #match "/:email/index" => "user#content" gereksiz
-  #match "/user/:email/index" => "user#index" gereksiz
-  #get "users/home" => "home#index" gereksiz
+  match "/student/index" => "student#index"
+  match "/student/proselects" => "student#proselects"
+  match "/student/settings" => "student#settings"
+  match "/student/reports" => "student#reports"
+
+  match "/commission/index" => "commission#index"
+  match "/commission/proselects" => "commission#proselects"
+  match "/commission/reports" => "commission#reports"
+  match "/commission/settings" => "commission#settings"
+  match "/commission/users" => "commission#users"
+
+  match "/institution/index" => "institution#index"
+  match "/institution/settings" => "institution#settings"
+  match "/institution/reports" => "institution#reports"
+  match "/institution/proselects" => "probations#index"
+  match "/institution/proselects/new" => "probations#new"
+  match "/institution/proselects/:id/edit" => "probations#edit"
+  match "/institution/proselects/:id" => "probations#show", via: :get
+  match "/institution/proselects/:id" => "probations#update", via: :put
+  match "/institution/proselects/:id" => "probations#destroy", via: :delete
 
 
   #authenticated :user do

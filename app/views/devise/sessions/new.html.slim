@@ -7,9 +7,12 @@
     div
       br/
       = f.password_field :password, :placeholder => 'Parola'
+    div
+      br/
+      =f.submit "Giriş"
+    div
     - if devise_mapping.rememberable?
       div
         = f.check_box :remember_me
         = f.label 'Beni Hatırla'
-    div= f.submit "Giriş Yap"
   = render "devise/shared/links"

@@ -1,0 +1,34 @@
+doctype
+html
+  head
+    title Staj Yönetim Sistemi
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  body
+    .container.navbar-wrapper
+      .navbar.navbar-inverse
+        .navbar-inner
+          ul.nav
+            li
+              a href="http://www.omu.edu.tr"19 Mayıs Üniversitesi
+            li
+              a href="/"Anasayfa
+            li
+              a href="/about.html"Hakkımızda
+            li
+              a href="/contact.html"İletişim
+            li
+              a href="/users/sign_in"Giriş
+        = yield
+        - flash.each do |key, value|
+          = content_tag :div, value, :class => "flash #{key}" unless value.blank?
+
+      - if current_user
+        - if current_user.role == "ogrenci"
+          = render 'studentmenu'
+        - if current_user.role == "kurum"
+          = render "institutionmenu"
+        - if current_user.role == "komisyon"
+          = render 'commissionmenu'
+

@@ -15,7 +15,7 @@ gem 'slim'
 gem 'slim-rails'
 gem 'cancan', '~> 1.6.8'
 gem 'less-rails'
-gem 'rake', '~> 10.0.2'
+gem 'rake', '~> 10.0.3'
 # Gems used only for assets and not required
 # in production environments by default.
 
