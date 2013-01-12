@@ -1,25 +1,20 @@
-.arkaplan
-  ul.nav.nav-tabs.nav-stacked
-  ul.nav.nav-list
-    li
-      p align="center"
-        = current_user.email
+.ortala
+  ul.nav
     li.divider
     li
       a href="index"
         | AnaSayfa
     li
-      a href="documents"
-        | Staj Belgeleri
-    li
-      a href="probook"
-        | Staj Defteri
+      a href="reports"
+        | Rapor
     li
       a href="proselects"
-        | Staj Yeri Seçimi
+       | Staj Yeri Seçimi
     li
       a href="settings"
         | Kullanıcı Ayarları
     li
       = link_to "Çıkış Yap", destroy_user_session_path, :method => :delete
-
+    li
+      p align="center"
+      = current_user.email

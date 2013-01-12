@@ -22,8 +22,7 @@ html
               a href="/users/sign_in"Giriş
         = yield
         - flash.each do |key, value|
-          = content_tag :div, value, :class => "flash #{key}" unless value.blank?
-
+          = content_tag :div, value
       - if current_user
         - if current_user.role == "ogrenci"
           = render 'studentmenu'
