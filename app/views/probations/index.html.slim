@@ -17,14 +17,14 @@
 	    - @probations.each do |probation|
 	      tr
 	        td= link_to probation.id, "/institution/proselects/#{probation.id}"
-	        td= proje.staj_yeri
-	        td= proje.tur
-	        td= proje.tarih
+	        td= probation.staj_yeri
+	        td= probation.tur
+	        td= probation.tarih
 	        
 	        td= probation.created_at
 		  - if can? :edit, probation
 		    td= link_to t('.edit', :default => t("helpers.links.edit")), "/institution/proselects/#{probation.id}/edit", :class => 'btn btn-mini'
-		  - if can? :destroy, proje
+		  - if can? :destroy, probation
 		    td= link_to t('.destroy', :default => t("helpers.links.destroy")), "/institution/proselects/#{probation.id}", :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-mini btn-danger'
   
 	= link_to t('.new', :default => t("helpers.links.new")), institution_proselects_new_path, :class => 'btn btn-primary'
