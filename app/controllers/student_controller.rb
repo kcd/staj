@@ -10,6 +10,12 @@ class StudentController < ApplicationController
   def settings
 
   end
+  def documents
+  
+  end
+  def probook
+
+  end
   def reports
 
   end

@@ -17,12 +17,14 @@ Staj::Application.routes.draw do
   match "/student/proselects" => "student#proselects"
   match "/student/settings" => "student#settings"
   match "/student/reports" => "student#reports"
+  match "/student/probook" => "student#probook"
+  match "/student/documents" => "student#documents"
 
   match "/commission/index" => "commission#index"
   match "/commission/proselects" => "commission#proselects"
   match "/commission/reports" => "commission#reports"
   match "/commission/settings" => "commission#settings"
-  match "/commission/users" => "commission#users"
+  match "/commission/users" => "commission#usersmatch "
 
   match "/institution/index" => "institution#index"
   match "/institution/settings" => "institution#settings"
