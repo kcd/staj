@@ -4,6 +4,15 @@ class CommissionController < ApplicationController
     #authorize! :index, @user, :message => 'Not authorized as an administrator.'
     #@user = User.all
   end
+  def users
+
+  end
+  def reports
+
+  end
+  def settings
+
+  end
   #def content
    # email = User.find(current_user_id).email.gsub(/@\w+.[A-z]+.[A-z]{2,4}+.[A,z]{2,4}/,'')
   #end

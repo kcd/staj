@@ -21,7 +21,6 @@ Staj::Application.routes.draw do
   match "/student/documents" => "student#documents"
 
   match "/commission/index" => "commission#index"
-  match "/commission/proselects" => "commission#proselects"
   match "/commission/reports" => "commission#reports"
   match "/commission/settings" => "commission#settings"
   match "/commission/users" => "commission#users"
@@ -29,6 +28,7 @@ Staj::Application.routes.draw do
   match "/institution/index" => "institution#index"
   match "/institution/settings" => "institution#settings"
   match "/institution/reports" => "institution#reports"
+  match "/institution/requests" => "institution#requests"
   match "/institution/proselects" => "probations#index"
   match "/institution/proselects/new" => "probations#new"
   match "/institution/proselects/:id/edit" => "probations#edit"
