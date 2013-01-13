@@ -12,11 +12,9 @@
       = f.label :tarih, :class => 'control-label'
       .controls
         = f.text_area :tarih, :class => 'text_area'
-
     .buton_orta
       = f.submit nil, :class => 'btn btn-primary'
       '
       = link_to t('.cancel', :default => t("helpers.links.cancel")),
         institution_proselects_path, :class => 'btn'
-
-
+ 
