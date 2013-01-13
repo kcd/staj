@@ -21,16 +21,16 @@ body {
 }
 
 
-/* Remove border and change up box shadow for more contrast */
+/* Remove border and change up box shadow for more contrast 
 .navbar .navbar-inner {
   border: 0;
   -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
      -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
           box-shadow: 0 2px 10px rgba(0,0,0,.25);
 }
-    /* Downsize the brand/project name a bit */
+    /* Downsize the brand/project name a bit 
 .navbar .brand {
-  padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+  padding: 14px 20px 16px; /* Increase vertical padding to match navbar links 
   font-size: 16px;
   font-weight: bold;
   text-shadow: 0 -1px 0 rgba(0,0,0,.5);
@@ -44,19 +44,21 @@ body {
 .navbar .btn-navbar {
   margin-top: 10px;
 }
- 
-/* Carousel base class */
+
+/* Carousel base class 
 .carousel {
   margin-bottom: 60px;
 }
- 
+*/
+/* 
 .carousel .container {
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
 }
- 
+*/
+/* 
 .carousel-control {
   background-color: transparent;
   border: 0;
@@ -64,15 +66,18 @@ body {
   margin-top: 0;
   text-shadow: 0 1px 1px rgba(0,0,0,.4);
 }
+*/
 
 .carousel .item {
   height: 500px;
 }
+ 
+
 .carousel img {
   min-width: 100%;
   height: 500px;
 }
- 
+/*
 .carousel-caption {
   background-color: transparent;
   position: static;
@@ -80,6 +85,8 @@ body {
   padding: 0 20px;
   margin-bottom: 100px;
 }
+*/
+
 .carousel-caption h1,
 .carousel-caption .lead {
   margin: 0;
@@ -87,13 +94,15 @@ body {
   color: #fff;
   text-shadow: 0 1px 1px rgba(0,0,0,.4);
 }
+/*
 .carousel-caption .btn {
   margin-top: 10px;
 } 
+*/
     /* MARKETING CONTENT
     -------------------------------------------------- */
  
-    /* Center align the text within the three columns below the carousel */
+    /* Center align the text within the three columns below the carousel 
 .marketing .span4 {
   text-align: center;
 }
@@ -104,22 +113,22 @@ body {
   margin-left: 10px;
   margin-right: 10px;
 }
- 
+*/
  
     /* Featurettes
-    ------------------------- */
+    ------------------------- 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 80px 0;  Space out the Bootstrap <hr> more 
 }
 .featurette {
-  padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-  overflow: hidden; /* Vertically center images part 2: clear their floats. */
+  padding-top: 120px; /* Vertically center images part 1: add padding above and below text. 
+  overflow: hidden;  Vertically center images part 2: clear their floats. 
 }
 .featurette-image {
-  margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+  margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it.
 }
  
-    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    /* Give some space on the sides of the floated elements so text doesn't run right into it.
 .featurette-image.pull-left {
   margin-right: 40px;
 }
@@ -127,18 +136,18 @@ body {
   margin-left: 40px;
 }
  
-    /* Thin out the marketing headings */
+    /* Thin out the marketing headings 
 .featurette-heading {
   font-size: 50px;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
 }
- 
+
  
  
     /* RESPONSIVE CSS
-    -------------------------------------------------- */
+    --------------------------------------------------
  
 @media (max-width: 979px) {
  
@@ -171,8 +180,8 @@ body {
      margin: 0 auto 20px;
    }
 }
- 
- 
+
+/*
 @media (max-width: 767px) {
  
   .navbar-inner {
@@ -218,4 +227,4 @@ body {
    }
  
 }
-
+*/

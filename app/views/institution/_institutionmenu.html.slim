@@ -1,17 +1,18 @@
-.ortala
-  ul.nav
-    li.divider
-    li
-      a href="index"
-        | AnaSayfa
-    li
-      a href="proselects"
-        | Staj Yeri Seçimi
-    li
-      a href="settings"
-        | Kullanıcı Ayarları
-    li
-      = link_to "Çıkış Yap", destroy_user_session_path, :method => :delete
-    li
-      p align="center"
-      = current_user.email
+.arkaplan
+  .ortala
+    ul.nav
+      li.divider
+      li
+        a href="index"
+          | AnaSayfa
+      li
+        a href="proselects"
+          | Staj Yeri Seçimi
+      li
+        a href="settings"
+          | Kullanıcı Ayarları
+      li 
+        = link_to "Çıkış Yap", destroy_user_session_path, :method => :delete
+      li
+        p align="center"
+        = current_user.email
